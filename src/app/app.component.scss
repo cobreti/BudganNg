@@ -1,0 +1,31 @@
+.app-root {
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .app-menu {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 2rem;
+    border: 1px solid blue;
+    box-sizing: border-box;
+  }
+
+  .app-content {
+    display: block;
+    flex: 1 auto;
+    position: relative;
+    left: 0;
+    width: 100%;
+    border: 1px solid red;
+    overflow:hidden;
+    box-sizing: border-box;
+  }
+}
