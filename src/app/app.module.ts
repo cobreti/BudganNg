@@ -7,6 +7,8 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { MainMenuItemComponent } from './components/main-menu-item/main-menu-item.component';
 import { HomeComponent } from './components/home/home.component';
 import { AccountComponent } from './components/account/account.component';
+import { CsvParser } from './core/services/csv-parser.interface';
+import { CsvParserService } from './core/services/csv-parser.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AccountComponent } from './components/account/account.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: CsvParser, useClass: CsvParserService }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

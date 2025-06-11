@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CsvParser } from 'src/app/core/services/csv-parser.interface';
 
 @Component({
   selector: 'app-account',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AccountComponent {
 
+  csvParser: CsvParser = inject(CsvParser);
+
+  constructor() {
+    console.log('AccountComponent initialized');
+  }
 }
