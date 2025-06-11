@@ -1,0 +1,12 @@
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 25vw;
+  min-height: 2rem;
+  background: lightblue;
+  opacity: 0.5;
+  border-radius: 0 0 1rem 1rem;
+  cursor: default;
+}
