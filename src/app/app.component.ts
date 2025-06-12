@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Budgan';
+
+  mainMenu = [
+    { label: 'Home', route: '/' },
+    { label: 'Account', route: '/account' }
+  ]
 }

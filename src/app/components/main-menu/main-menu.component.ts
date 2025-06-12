@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface MainMenuItem {
+    label: string;
+    route: string;
+}
+
 
 @Component({
     selector: 'app-main-menu',
@@ -8,4 +14,5 @@ import { Component } from '@angular/core';
 })
 export class MainMenuComponent {
 
+  @Input() items: MainMenuItem[] = [];
 }

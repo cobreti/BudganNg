@@ -1,3 +1,8 @@
 <div class="main-menu">
-  <ng-content></ng-content>
+  @for (item of items; track item) {
+    <app-main-menu-item
+      [label]="item.label"
+      [route]="item.route"
+    ></app-main-menu-item>
+  }
 </div>

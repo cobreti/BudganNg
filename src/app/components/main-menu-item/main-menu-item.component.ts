@@ -10,6 +10,7 @@ import { filter } from 'rxjs';
 })
 export class MainMenuItemComponent {
   @Input() route: string = '';
+  @Input() label: string = '';
   router: Router = inject(Router);
 
   constructor() {
