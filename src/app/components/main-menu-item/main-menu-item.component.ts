@@ -3,9 +3,10 @@ import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 
 @Component({
-  selector: 'app-main-menu-item',
-  templateUrl: './main-menu-item.component.html',
-  styleUrls: ['./main-menu-item.component.scss']
+    selector: 'app-main-menu-item',
+    templateUrl: './main-menu-item.component.html',
+    styleUrls: ['./main-menu-item.component.scss'],
+    standalone: false
 })
 export class MainMenuItemComponent {
   @Input() route: string = '';
