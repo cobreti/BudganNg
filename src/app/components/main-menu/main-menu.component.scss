@@ -5,7 +5,8 @@
   align-items: center;
   min-width: 25vw;
   min-height: 2rem;
-  background: lightblue;
+  // background: lightblue;
+  background-color: transparentize(lightblue, 0.3);
   // opacity: 0.5;
   border-radius: 0 0 1rem 1rem;
   cursor: default;
